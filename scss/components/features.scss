@@ -1,0 +1,22 @@
+.features {
+  padding-top: 1rem;
+  text-align: center;
+
+  .feature {
+    @include span-columns(3);
+    @include omega(4n);
+  }
+
+  h3 {
+    font-family: "open-sans-condensed", "helvetica neue";
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: darken(#999999, 15%);
+  }
+}
