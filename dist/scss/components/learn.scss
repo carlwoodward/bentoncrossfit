@@ -1,0 +1,26 @@
+.learn {
+  margin-top: 5rem;
+
+  h2 {
+    font-family: "open-sans-condensed", "helvetica neue";
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: darken(#999999, 15%);
+  }
+
+  .beginner, .advanced {
+    @include span-columns(6);
+
+    video {
+      width: 100%;
+    }
+  }
+
+  .advanced {
+    @include omega();
+  }
+}

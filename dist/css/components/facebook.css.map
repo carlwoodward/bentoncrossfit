@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,IAAI",
+"sources": ["../../scss/components/facebook.scss"],
+"names": [],
+"file": "facebook.css"
+}

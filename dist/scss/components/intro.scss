@@ -1,0 +1,44 @@
+.intro {
+  @include span-columns(6);
+  @include shift(3);
+
+  color: white;
+  padding-top: 6rem;
+  position: relative;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+
+  .better-self {
+    position: absolute;
+    text-align: center;
+    top: calc(50vh - 12rem);
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 3.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      margin-bottom: 3rem;
+      padding-top: 0.5rem;
+    }
+
+    a.free-trial {
+      background: #80BC41;
+      border-radius: 40px;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 0.75rem 2rem;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+    }
+
+    a.down {
+      display: block;
+      margin-top: 4rem;
+    }
+  }
+}
