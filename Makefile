@@ -1,12 +1,8 @@
-dist/css/app.css: $(shell find web/scss -name \*.scss)
+dist/css/app.css: $(shell find dist/scss -name \*.scss)
 	mkdir -p $(dir $@)
-	sass web/scss/app.scss:$@
+	sass dist/scss/app.scss:$@
 
-dist/index.html: web/index.html
-	mkdir -p $(dir $@)
-	cp $^ $@
-
-all: dist/css/app.css dist/index.html
+all: dist/css/app.css
 
 .DEFAULT: all
 
