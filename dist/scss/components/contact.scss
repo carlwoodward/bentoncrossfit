@@ -1,0 +1,13 @@
+.contact {
+  margin-top: 1.5rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .details {
+    @include span-columns(6);
+    @include shift(3);
+  }
+}

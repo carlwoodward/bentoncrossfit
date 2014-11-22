@@ -4,13 +4,20 @@
 @import "neat/neat";
 
 @import "components/container";
+@import "components/typography";
 @import "components/header";
 @import "components/intro";
 @import "components/learn";
 @import "components/facebook";
 @import "components/about";
 @import "components/features";
+@import "components/facility";
+@import "components/getting_started";
+@import "components/team";
+@import "components/timetable";
+@import "components/price";
+@import "components/contact";
 
-h1, h2, h3, h4, h5, h6, p, li, body, html {
+body, html {
   font-family: "open-sans", "helvetica neue";
 }

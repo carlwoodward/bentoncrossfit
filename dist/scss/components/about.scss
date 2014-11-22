@@ -1,17 +1,6 @@
 .about {
   padding: 1rem 0;
 
-  h2 {
-    font-family: "open-sans-condensed", "helvetica neue";
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-  }
-
-  p {
-    color: darken(#999999, 15%);
-  }
-
   .group {
     @include span-columns(6);
   }

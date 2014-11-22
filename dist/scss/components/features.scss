@@ -8,15 +8,13 @@
   }
 
   h3 {
+    border-bottom: 1px solid #dddddd;
     font-family: "open-sans-condensed", "helvetica neue";
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.6rem;
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
     text-transform: uppercase;
-  }
-
-  p {
-    color: darken(#999999, 15%);
   }
 }
