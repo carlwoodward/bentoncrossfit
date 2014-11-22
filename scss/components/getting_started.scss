@@ -1,0 +1,12 @@
+.getting-started {
+  padding: 1rem 0;
+
+  .info {
+    @include span-columns(7);
+  }
+
+  .picture {
+    @include span-columns(5);
+    @include omega;
+  }
+}

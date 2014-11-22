@@ -1,0 +1,28 @@
+.price {
+  margin-top: 1.5rem;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 5rem;
+    // font-weight: normal;
+    margin: 2rem 0 0 0;
+  }
+
+  p.time {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  section {
+    @include span-columns(4);
+
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}

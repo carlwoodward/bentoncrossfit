@@ -1,0 +1,12 @@
+.facility {
+  padding: 1rem 0;
+
+  .picture {
+    @include span-columns(7);
+  }
+
+  .info {
+    @include span-columns(5);
+    @include omega;
+  }
+}

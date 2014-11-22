@@ -1,0 +1,44 @@
+.timetable {
+  margin-top: 1.5rem;
+
+  .timetable-table {
+    @include span-columns(9);
+  }
+
+  .info {
+    @include span-columns(3);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  th {
+    border-bottom: 1px solid #DDD;
+  }
+
+  thead {
+    tr {
+      th {
+        text-align: center;
+      }
+    }
+  }
+
+  th {
+    text-align: right;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  td.grid {
+    background: #80BC41;
+    color: white;
+  }
+
+  td.free {
+    background: #efefef;
+  }
+}

@@ -1,0 +1,68 @@
+.team {
+  margin-top: 1.5rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .images {
+    @include span-columns(6);
+  }
+
+  .info {
+    @include span-columns(6);
+    @include omega;
+
+    h3 {
+      border-bottom: 1px solid #dddddd;
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    h4 {
+      color: darken(#999999, 20%);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .grid {
+      margin-bottom: 2rem;
+
+      img {
+        display: inline-block;
+        margin-left: 2%;
+        text-align: right;
+        width: 32%;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1rem;
+    }
+  }
+
+  .crew {
+    @include outer-container;
+
+    clear: both;
+    padding-top: 1.5rem;
+
+    .member {
+      @include span-columns(4);
+
+      h4 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
