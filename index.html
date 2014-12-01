@@ -29,8 +29,8 @@
         </div>
       </div>
     </header>
-    <div class="learn container" data-sr="enter bottom">
-      <section class="beginner">
+    <div class="learn container" id="learn">
+      <section class="beginner" data-sr="enter from the left after 0.5s">
         <video width="100%" controls>
           <source src="from-beginner.mp4" />
         </video>
@@ -38,7 +38,7 @@
         <p>We focus on your health and happiness. Our community helps people form lasting friendships and feel supported. At BentonCrossfit the person next to you just as valuable as the coach looking after you.</p>
         <p>Body movement is complicated so we take the time and care to teach you at your pace. We encourage you to work as hard as you can to get the most out workouts but we always look out of for your welfare.</p>
       </section>
-      <section class="advanced">
+      <section class="advanced" data-sr="enter right please, and hustle 20px after 2s">
         <video width="100%" controls>
           <source src="to-advanced.mp4" />
         </video>
@@ -47,7 +47,7 @@
       </section>
     </div>
     <hr />
-    <div class="about container" data-sr="enter left">
+    <div class="about container" id="about" data-sr>
       <div class="group">
         <img src="images/about.jpg" />
       </div>
@@ -59,7 +59,7 @@
         <p>We'll teach you Crossfit: a functional fitness program, but more then that we'll empower you to take control of your life, both mentally and physically. The workouts are really challenging but with the support of our community you'll always make it out the other side. And be better for it.</p>
       </section>
     </div>
-    <div class="features container" data-sr="enter left and move 50px over 1.33s">
+    <div class="features container" data-sr>
       <section class="feature">
         <h3>Excellent Facilities</h3>
         <p>We have state of the art equipment that helps you to feel safe and secure when working out.</p>
@@ -77,7 +77,7 @@
         <p>Make new friends in the Southern Highlands. BentonCrossfit is more then a gym, it's a community.</p>
       </section>
     </div>
-    <div class="facility container">
+    <div class="facility container" data-sr="enter left please, and hustle 20px after 1s">
       <div class="picture">
         <img src="images/facility.jpg" alt="Our Facility" />
       </div>
@@ -115,7 +115,7 @@
         <img src="images/getting-started.jpg" alt="Getting started" />
       </div>
     </div>
-    <div class="team container">
+    <div class="team container" data-sr>
       <h2>Meet Our Team</h2>
       <div class="images">
         <img src="images/ben-garard.jpg" alt="Ben Garard" />
@@ -282,7 +282,7 @@
     <script src="/js/scrollReveal.min.js"></script>
     <script src="/js/map.js"></script>
     <script>
-      // window.sr = new scrollReveal();
+      $(function() { window.sr = new scrollReveal(); });
     </script>
   </body>
 </html>
