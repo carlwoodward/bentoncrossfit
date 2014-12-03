@@ -1,0 +1,97 @@
+$mobile: new-breakpoint(max-width 480px 6);
+
+@include media($mobile) {
+  .container {
+    padding: 0 1rem;
+    max-width: 480px;
+  }
+
+  header {
+    background: url(/images/mobile-bg.jpg);
+    object-cover: fit;
+
+    video {
+      display: none;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .intro {
+      @include span-columns(6);
+      @include shift(0);
+
+      padding-top: 1rem;
+
+      .better-self {
+        position: relative;
+        top: 0;
+
+        a.free-trial {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .learn {
+    display: none;
+  }
+
+  .about {
+    .group, .info {
+      @include span-columns(6);
+    }
+  }
+
+  .features {
+    display: none;
+  }
+
+  .facility {
+    .picture, section {
+      @include span-columns(6);
+    }
+  }
+
+  .team {
+    .images, .info {
+      @include span-columns(6);
+    }
+  }
+
+  .timetable {
+    .timetable-table {
+      @include span-columns(6);
+
+      font-size: 0.7rem;
+    }
+
+    .info {
+      display: none;
+    }
+  }
+
+  .price {
+    display: none;
+  }
+
+  .contact .details {
+    @include span-columns(6);
+    @include shift(0);
+  }
+
+  .getting-started .picture {
+    display: none;
+  }
+
+  .getting-started .info {
+    @include span-columns(6);
+  }
+
+  .team .crew .member {
+    @include span-columns(3);
+    @include omega(2n);
+  }
+}

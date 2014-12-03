@@ -877,7 +877,7 @@ header {
     text-align: center; }
   .timetable th {
     border-bottom: 1px solid #DDD; }
-  .timetable thead tr th {
+  .timetable tr.days th {
     text-align: center; }
   .timetable th {
     text-align: right; }
@@ -926,6 +926,108 @@ header {
     .contact .details:last-child {
       margin-right: 0; }
 
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+    max-width: 480px; }
+
+  header {
+    background: url(/images/mobile-bg.jpg);
+    object-cover: fit; }
+    header video {
+      display: none; }
+    header .logo {
+      text-align: center; }
+    header .intro {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%;
+      margin-left: 0%;
+      padding-top: 1rem; }
+      header .intro:last-child {
+        margin-right: 0; }
+      header .intro .better-self {
+        position: relative;
+        top: 0; }
+        header .intro .better-self a.free-trial {
+          font-size: 0.8rem; }
+
+  .learn {
+    display: none; }
+
+  .about .group, .about .info {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%; }
+    .about .group:last-child, .about .info:last-child {
+      margin-right: 0; }
+
+  .features {
+    display: none; }
+
+  .facility .picture, .facility section {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%; }
+    .facility .picture:last-child, .facility section:last-child {
+      margin-right: 0; }
+
+  .team .images, .team .info {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%; }
+    .team .images:last-child, .team .info:last-child {
+      margin-right: 0; }
+
+  .timetable .timetable-table {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+    font-size: 0.7rem; }
+    .timetable .timetable-table:last-child {
+      margin-right: 0; }
+  .timetable .info {
+    display: none; }
+
+  .price {
+    display: none; }
+
+  .contact .details {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+    margin-left: 0%; }
+    .contact .details:last-child {
+      margin-right: 0; }
+
+  .getting-started .picture {
+    display: none; }
+
+  .getting-started .info {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%; }
+    .getting-started .info:last-child {
+      margin-right: 0; }
+
+  .team .crew .member {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%; }
+    .team .crew .member:last-child {
+      margin-right: 0; }
+    .team .crew .member:nth-child(2n) {
+      margin-right: 0; }
+    .team .crew .member:nth-child(2n+1) {
+      clear: left; } }
 body, html {
   font-family: "open-sans", "helvetica neue"; }
 
