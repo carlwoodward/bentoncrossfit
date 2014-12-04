@@ -28,8 +28,12 @@ $mobile: new-breakpoint(max-width 480px 6);
         position: relative;
         top: 0;
 
-        a.free-trial {
-          font-size: 0.8rem;
+        a.free-trial.mobile {
+          display: block;
+        }
+
+        a.free-trial.desktop {
+          display: none;
         }
       }
     }
