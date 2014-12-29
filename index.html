@@ -313,13 +313,6 @@
     <script src="js/map.js"></script>
     <script>
       $(function() {
-        if ($(window).width() > 900) {
-          $('header').css({ height: '' + Math.min($(window).height(), $(window).width()) + 'px' });
-          $('header').css({ height: '' + $('header video').height() + 'px' });
-          if ($('header video').height() < 600) {
-            $('header, header video').css({ height: '' + 600 + 'px' });
-          }
-        }
         window.sr = new scrollReveal();
       });
     </script>
