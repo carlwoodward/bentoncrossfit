@@ -936,7 +936,7 @@ header {
   header {
     background: url(/images/mobile-bg.jpg);
     object-cover: fit;
-    height: 900px;
+    height: 700px;
     object-fit: cover;
     position: relative;
     width: 100vw; }
