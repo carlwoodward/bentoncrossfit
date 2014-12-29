@@ -34,6 +34,7 @@ $mobile: new-breakpoint(max-width 900px 6);
 
         a.free-trial.mobile {
           display: block;
+          font-size: 90%;
         }
 
         a.free-trial.desktop {
@@ -99,7 +100,6 @@ $mobile: new-breakpoint(max-width 900px 6);
   }
 
   .team .crew .member {
-    @include span-columns(3);
-    @include omega(2n);
+    @include span-columns(6);
   }
 }
