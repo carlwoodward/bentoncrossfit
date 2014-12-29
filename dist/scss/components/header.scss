@@ -1,16 +1,14 @@
 header {
-  height: 100vh;
-  object-fit: cover;
   position: relative;
-  width: 100vw;
+  overflow: hidden;
+  width: 100%;
 
   video {
-    height: 100vh;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
+    position: absolute;
+    width: 100%;
     z-index: -1;
+    top: 0;
+    left: 0;
   }
 
   .outer-container {

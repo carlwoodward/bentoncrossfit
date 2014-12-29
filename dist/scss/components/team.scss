@@ -54,14 +54,10 @@
     padding-top: 1.5rem;
 
     .member {
-      @include span-columns(4);
-
-      h4 {
-        text-align: center;
-      }
+      @include span-columns(3);
 
       p {
-        text-align: center;
+        font-size: 90%;
       }
     }
   }

@@ -36,7 +36,7 @@
           <source src="from-beginner.mp4" />
         </video>
         <h2>For Everyday People</h2>
-        <p>We focus on your health and happiness. Our community helps people form lasting friendships and feel supported. At BentonCrossfit the person next to you just as valuable as the coach looking after you.</p>
+        <p>We focus on your health, fitness and happiness. Our community helps people form lasting friendships and feel supported. At BentonCrossfit the person next to you just as valuable as the coach looking after you.</p>
         <p>Body movement is complicated so we take the time and care to teach you at your pace. We encourage you to work as hard as you can to get the most out workouts but we always look out of for your welfare.</p>
       </section>
       <section class="advanced" data-sr="enter right please, and hustle 20px after 2s">
@@ -44,7 +44,7 @@
           <source src="to-advanced.mp4" />
         </video>
         <h2>To Advanced</h2>
-        <p>If you have a sporting background and you are looking to get better, our advanced workouts are a great way to push your skills to new heights. Our coaches are world class athletes who compete in Crossfit and NPGL competitions.</p>
+        <p>If you have a sporting background and you are looking to get better, our advanced workouts are a great way to push your skills to new heights. Our coaches include world class athletes who compete in national and international competitions.</p>
       </section>
     </div>
     <hr />
@@ -55,7 +55,7 @@
       <section class="info">
         <h2>About Us</h2>
         <p>You aren't just looking at another gym. You'll definitely throw weights around, run, jump, sweat, grunt and groan. But you'll do it with some new friends.</p>
-        <p>You will work really hard. Sometimes you'll feel like giving up, but we'll always be there to help you. You'll do things you find easy and things that you find difficult. We'll continue to encourage and teach you until you nail it.</p>
+        <p>You will work really hard. Sometimes you'll feel like giving up, but we'll always be there to help you. You'll do things you find easy and things that you find difficult. We'll continue to encourage and teach you until you perfect it.</p>
 
         <p>We'll teach you Crossfit: a functional fitness program, but more then that we'll empower you to take control of your life, both mentally and physically. The workouts are really challenging but with the support of our community you'll always make it out the other side. And be better for it.</p>
       </section>
@@ -130,6 +130,7 @@
         <h4>Head Coach</h4>
 
         <p>Ben is part of the upper echelon of the Crossfit world. He is a regional competitor and is one of the few Australian atheletes to be part of the new <a href="https://www.npgl.com/">National Pro Grid League</a> competition. This American based competition allows Ben to compete side by side with the worlds best. And it also gives him an opportunity to learn coaching techniques from top Crossfit coaches all around the world.</p>
+        <p>He is technique expert that can see how to help every different person, provide the right structure and guidance to make progress.</p>
         <p>Other achievements include:</p>
         <ul>
           <li>Winner - Fitbloke Challenge</li>
@@ -141,15 +142,28 @@
       <div class="crew">
         <section class="member">
           <img src="images/ricky.jpg" alt="Ricky" />
+        </section>
+        <section class="member">
           <h4>Ricky Garard</h4>
-          <p>Crossfit Coach.</p>
+          <p>Ricky is an up and coming CrossFit star and has recently furthered his CrossFit career winning high level competitions and qualifying for competitions in the USA.</p>
+
+          <p>1st Place - "Mens Fitness" Fit Bloke Challenge.<br/>
+          1st Place - Olympus Unleashed 'Advanced'<br/>
+          Wodapalooza 2015-MIAMI Fitness Festival-Qualifier<br/>
+          OC Throwdown 2015 Qualifier</p>
         </section>
         <section class="member">
           <img src="images/cindy.jpg" alt="Ricky" />
-          <h4>Cindy Garard</h4>
-          <p>Crossfit Coach.</p>
         </section>
         <section class="member">
+          <h4>Cindy Garard</h4>
+          <p>Cindy has always had a passion for helping others, having recently become qualified as an Occupational Therapist. This has influenced her role as a CrossFit coach.</p>
+
+          <p>Olympus Unleashed 2014 -1st Place<br/>
+          Let's Start a Riot 2014 - 3rd Place<br/>
+          Shape Fit Chick Challenge Syd 2014 - 6th place<br/>
+          Shape Fit Chick Challenge Melb 2014 -  7th place
+          </p>
         </section>
       </div>
     </div>
@@ -292,12 +306,19 @@
       <div id="map" style="width: 100%; height: 20rem;"></div>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="js/scrollReveal.min.js"></script>
+    <script src="js/jquery.object-fit.min.js"></script>
     <script src="js/map.js"></script>
     <script>
-      $(function() { window.sr = new scrollReveal(); });
+      $(function() {
+        if ($(window).width > 900) {
+          $('header').css({ height: '' + Math.min($(window).height(), $(window).width()) + 'px' });
+          $('header').css({ height: '' + $('header video').height() + 'px' });
+        }
+        window.sr = new scrollReveal();
+      });
     </script>
   </body>
 </html>
