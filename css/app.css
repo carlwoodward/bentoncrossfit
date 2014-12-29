@@ -631,17 +631,15 @@ a {
     text-decoration: underline; }
 
 header {
-  height: 100vh;
-  object-fit: cover;
   position: relative;
-  width: 100vw; }
+  overflow: hidden;
+  width: 100%; }
   header video {
-    height: 100vh;
-    object-fit: cover;
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-    z-index: -1; }
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0; }
   header .outer-container {
     position: absolute;
     top: 2rem;
@@ -670,7 +668,7 @@ header {
   .intro .better-self {
     position: absolute;
     text-align: center;
-    top: calc(50vh - 12rem); }
+    top: 10rem; }
     .intro .better-self h1 {
       font-size: 3rem;
       font-weight: 300;
@@ -851,13 +849,11 @@ header {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%; }
+      width: 23.23176%; }
       .team .crew .member:last-child {
         margin-right: 0; }
-      .team .crew .member h4 {
-        text-align: center; }
       .team .crew .member p {
-        text-align: center; }
+        font-size: 90%; }
 
 .timetable {
   margin-top: 1.5rem; }
@@ -928,14 +924,18 @@ header {
     .contact .details:last-child {
       margin-right: 0; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   .container {
     padding: 0 1rem;
     max-width: 480px; }
 
   header {
     background: url(/images/mobile-bg.jpg);
-    object-cover: fit; }
+    object-cover: fit;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    width: 100vw; }
     header video {
       display: none; }
     header .logo {

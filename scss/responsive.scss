@@ -1,4 +1,4 @@
-$mobile: new-breakpoint(max-width 480px 6);
+$mobile: new-breakpoint(max-width 900px 6);
 
 @include media($mobile) {
   .container {
@@ -9,6 +9,10 @@ $mobile: new-breakpoint(max-width 480px 6);
   header {
     background: url(/images/mobile-bg.jpg);
     object-cover: fit;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    width: 100vw;
 
     video {
       display: none;
