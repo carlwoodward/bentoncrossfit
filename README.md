@@ -15,3 +15,7 @@ OR
 ```
 foreman start
 ```
+
+## Deployment
+
+https://gist.github.com/cobyism/4730490
