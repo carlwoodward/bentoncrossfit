@@ -882,9 +882,11 @@ header {
   .timetable tr.days th {
     text-align: center; }
   .timetable th {
-    text-align: right; }
+    text-align: left; }
   .timetable td {
-    text-align: center; }
+    text-overflow: ellipsis;
+    text-align: center;
+    overflow: hidden; }
   .timetable td.grid {
     background: #80BC41;
     color: white; }
